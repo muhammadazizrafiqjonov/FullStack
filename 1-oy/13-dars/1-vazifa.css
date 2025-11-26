@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(176, 236, 231);
+}
+.Border{
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px 35px;
+}
+.Border span{
+    color: green;
+}
+h2{
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+.Names{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    font-size: 15px;
+    
+}
+.inputFields{
+    width: 210px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: white;
+    padding-top: 9px;
+    padding-left: 20px;
+}
+.Query{
+    margin-top: 20px;
+    gap:10px;
+    font-size: 15px;
+}
+.Radio{
+    display: flex;
+    gap : 10px;
+    justify-content: center;
+}
+.Email{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.Email input{
+    justify-content: center;
+    width: 430px;
+    height: 35px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+.Message{
+    font-size: 15px;
+    width: 210px;
+    height: 35px;
+    margin-top: 20px;
+}
+.textarea{
+    width: 430px;
+    height: 60px;
+    border-radius: 10px;
+}
+.CheckBox{
+    padding-top: 60px;
+}
+button{
+    background-color: green;
+    color:aliceblue;
+    width: 430px;
+    height: 40px;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(58, 95, 58);
+    cursor:pointer;
+}
+
+button:active{
+    background-color: black;
+    
+}
