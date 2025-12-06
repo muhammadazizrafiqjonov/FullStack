@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="videoEl"  controls></video>
+
+    <script>
+        navigator.getUserMedia({video:true, audio:true},stream => {
+            videoEl.srcObject = stream
+        },(error) => console.log(error))
+    </script>
+</body>
+</html>
