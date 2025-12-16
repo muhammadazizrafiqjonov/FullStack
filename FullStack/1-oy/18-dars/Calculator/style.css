@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    border: 2px;
+    width: 400px;
+    height: 400px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.raqamlar{
+    border: 2px;
+}
+.amallar{
+    border: 2px;
+}
