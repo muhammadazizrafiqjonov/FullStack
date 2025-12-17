@@ -45,7 +45,6 @@ const POST = (req,res) => {
     teachers.push(New_Teacher)
 
     filesystem.write("teachers", teachers)
-    // fs.writeFileSync(path.join(process.cwd(),"vazifa", "src", "database", "teachers.json"), JSON.stringify(teachers, null, 4))
 
     res.status(201).json({
         status : 201,
@@ -71,8 +70,6 @@ const PUT = (req,res) => {
 
     filesystem.write("teachers", teachers)
 
-    // fs.writeFileSync(path.join(process.cwd(),"vazifa", "src", "database", "teachers.json"), JSON.stringify(teachers, null, 4))
-
     res.status(200).json({
         status : 200,
         message : "Teacher updated successfully"
@@ -91,8 +88,6 @@ const DELETE = (req,res) => {
     teachers.splice(id-1,1)
 
     filesystem.write("teachers", teachers)
-
-    // fs.writeFileSync(path.join(process.cwd(),"vazifa", "src", "database", "teachers.json"), JSON.stringify(teachers, null, 4))
 
     res.status(200).json({
         status : 200,
