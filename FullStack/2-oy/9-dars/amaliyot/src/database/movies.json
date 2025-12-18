@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "title" : "Inception",
+        "genre" : "action",
+        "year" : 2012,
+        "rating" : 8.8
+    },
+    {
+        "id" : 2,
+        "title" : "Inception1",
+        "genre" : "action",
+        "year" : 2011,
+        "rating" : 8.17
+    },
+    {
+        "id" : 3,
+        "title" : "Inception2",
+        "genre" : "action",
+        "year" : 2010,
+        "rating" : 8.10
+    }
+]
