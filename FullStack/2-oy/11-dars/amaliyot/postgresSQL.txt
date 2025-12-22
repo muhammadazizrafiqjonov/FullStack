@@ -1,0 +1,49 @@
+create table students (
+    id serial,
+    full_name varchar(100),
+    age int,
+    gender  varchar(20),
+    group_name varchar(20),
+    created_at date
+);
+
+INSERT INTO students (full_name, age, gender, group_name, created_at) VALUES
+('Ali Karimov', 18, 'Male', 'CS-101', '2024-09-01'),
+('Vali Usmonov', 19, 'Male', 'CS-101', '2024-09-01'),
+('Dilshod Bekov', 20, 'Male', 'CS-102', '2024-09-02'),
+('Aziza Rahmonova', 18, 'Female', 'CS-101', '2024-09-01'),
+('Malika Tursunova', 19, 'Female', 'CS-103', '2024-09-03'),
+('Sardor Qodirov', 21, 'Male', 'CS-102', '2024-09-02'),
+('Jasmin Xolmatova', 20, 'Female', 'CS-104', '2024-09-04'),
+('Bobur Ismoilov', 22, 'Male', 'CS-105', '2024-09-05'),
+('Shohista Alimuhamedova', 19, 'Female', 'CS-103', '2024-09-03'),
+('Bekzod Nuriddinov', 23, 'Male', 'CS-105', '2024-09-05'),
+('Madina Yusupova', 18, 'Female', 'CS-101', '2024-09-01'),
+('Rustam Gʻaniyev', 21, 'Male', 'CS-104', '2024-09-04'),
+('Nigora Abduqodirova', 20, 'Female', 'CS-102', '2024-09-02'),
+('Shaxzod Mamatqulov', 22, 'Male', 'CS-106', '2024-09-06'),
+('Kamola Saidova', 19, 'Female', 'CS-103', '2024-09-03'),
+('Javohir Toirov', 20, 'Male', 'CS-104', '2024-09-04'),
+('Zarina Nematova', 21, 'Female', 'CS-105', '2024-09-05'),
+('Otabek Rasulov', 23, 'Male', 'CS-106', '2024-09-06'),
+('Lola Karimova', 18, 'Female', 'CS-101', '2024-09-01'),
+('Temur Azizov', 22, 'Male', 'CS-106', '2024-09-06');
+
+
+1   select * from students;
+2  select * from students where age > 18;
+3  select * from students where group_name = 'CS-102';
+4  select count(id) from students;
+5  select * from students where gender = 'Female';
+
+
+
+1  select * from students order by age desc;
+2  select * from students order by age asc limit 3;
+3   1 select * from students order by created_at;
+    2 select * from students order by created_at desc;
+
+
+1   select avg(age) from students;
+2   1   select * from students order by age desc limit 1;
+    2   select * from students order by age limit 1;
