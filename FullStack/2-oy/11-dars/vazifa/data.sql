@@ -119,14 +119,10 @@ select product_Id from order_items where quantity>1 GROUP BY order_items.product
 
 3-qism
 
-select id,name from orders INNER JOIN customers on orders.customer_Id = customers.id;
-
+select id, cutomers.full_name from orders INNER JOIN customers on orders.customer_Id = customers.id;
 select order_Id, name , quantity from order_items INNER JOIN products on order_items.product_Id = products.id;
 select order_Id, name , price*quantity from order_items INNER JOIN products on order_items.product_Id = products.id;
-
-
+select customers.full_name, order_date from orders inner join customers on orders.customer_Id = customers.id;
 select order_Id, name  from order_items INNER JOIN products on order_items.product_Id = products.id where price*quantity > 1000;
-
-
 
 
